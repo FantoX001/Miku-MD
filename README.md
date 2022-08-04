@@ -26,15 +26,41 @@
     <img src="(https://visitor-badge.glitch.me/badge?page_id=https://github.com/FantoX001/Shikimori-MD.visitor-badge&left_text=Total%20Repo%20Visitors)">
   </a>
 </br>
-     </br>  
-     
-### ✧✧ Use `Heroku Deploy Method 2` for easy and more convenient deploy(Trust me).    
+      
+</br> 
+   
+### ✧✧ This bot is still under development so if you want to recode/modify it, pls check this main repo once in 2 days because i am continuously debugging it and making major changes in it.
+</br>
+
+### ✧ Use `Heroku Deploy Method 2` for easy and more convenient deploy(Trust me).    
 
 
-### ✧✧ Deoloy Video tutorial:
+### ✧ Deploy Video tutorial:
 - Here's the [video tutorial](https://youtu.be/fZdM7Ahb4JE) on how to deploy and host Miku bot.
 - [Video Guide](https://youtu.be/fZdM7Ahb4JE)
 </br>
+
+
+## ✧✧ Why use Miku as your Base?
+
+```
+1. Copyright Free.
+2. No Source Code Encryption.
+3. Most commands.
+4. Singe prefix ("-").
+5. Self restoration.
+6. No API key needed!
+7. Supports latest WhatsApp version.
+8. Full premission to Recode.
+9. Regularly Updating and Improving.
+
+✧ The main motto of this project is to provide Beginner Devs a base without any limitations 😊.
+✧ Check "Credits" section and Support Them too.
+
+-regards FantoX001
+```
+</br>
+
 ## Heroku Deployment Method 1:
 
 #### ✧ Fork this repo.

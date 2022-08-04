@@ -1560,10 +1560,14 @@ case 'nsfwmenu':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!AntiNsfw) return reply(mess.nonsfw)
-        reply(` *━━━━━━〈  NSFW Menu  〉━━━━━━*\n\n🏮 hentaivideo, blowjobgif, hneko, masturbation, thighs, pussy, panties, orgy, ahegao, ass, bdsm, blowjob, cuckold, ero, gasm, cum, femdom, foot, gangbang, glasses, jahy, trap, blowjobgif, spank, hneko, hwaifu, gasm`)
+        reply(` *━━━━━━〈  📛 NSFW Menu 📛  〉━━━━━━*\n\nhentaivideo, blowjobgif, hneko, masturbation, thighs, pussy, panties, orgy, ahegao, ass, bdsm, blowjob, cuckold, ero, gasm, cum, femdom, foot, gangbang, glasses, jahy, trap, blowjobgif, spank, hneko, hwaifu, gasm`)
     break
 
-    
+case 'reaction': case 'react': case 'reactions':
+        if (isBan) return reply(mess.banned)	 			
+        if (isBanChat) return reply(mess.bangc)
+            reply(` *━━━━━━〈  📍 Reactions 📍  〉━━━━━━*\n\nbonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe`)
+        break   
     
 
 case 'limituser': case 'userlimit': case 'limit':
@@ -1758,7 +1762,7 @@ sections
 }
 break
 
-
+/*
 case 'animesearchxxx': case 'anime':{
     await fetchJson(`https://api.jikan.moe/v4/anime/${q}`)
     .then((res) => {
@@ -1767,7 +1771,7 @@ case 'animesearchxxx': case 'anime':{
     })
     }
     break
-
+*/
 
 case 'coffee': case 'kopi': {
         if (isBan) return reply(mess.banned)	 			
@@ -1839,7 +1843,7 @@ case 'delete': case 'del': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
  let anu = await store.chats.all().filter(v => v.id.endsWith('.net')).map(v => v)
- let teks = ` 「 _PC Bot user list_ 」\n\nTotal ${anu.length} users are using bot in personal chat.`
+ let teks = ` 「  Miku's pm user list  」\n\nTotal ${anu.length} users are using Miku in personal chat.`
  for (let i of anu) {
   teks += `\n\nProfile : @${i.id.split('@')[0]}\nChat : ${i.unreadCount}\nLastchat : ${moment(i.conversationTimestamp * 1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`
  }
@@ -1851,7 +1855,7 @@ case 'delete': case 'del': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
  let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
- let teks = ` 「  Group Bot user list  」\n\nTotal ${anu.length} users are using bot in Groups.`
+ let teks = ` 「  Miku's group user list  」\n\nTotal ${anu.length} users are using bot in Groups.`
  for (let i of anu) {
   let metadata = await Miku.groupMetadata(i)
   if (metadata.owner === "undefined") {
@@ -4166,6 +4170,246 @@ reply(mess.waiting)
 break
 
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+case 'cry':  case 'handhold':{
+
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+    if (!m.isGroup) return replay(mess.grouponly)	
+	var pat = await fetchJson(`https://api.waifu.pics/sfw/${command}`)
+	try {
+		let messsender = m.sender
+let musers=``
+try {
+users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+
+ ment=[messsender,users]
+} catch {
+	users == "none"
+	 ment=[messsender,m.sender]
+}
+if(users == "none"){
+     musers =`@${m.sender.split("@")[0]} ${command}ed with themself!`
+     console.log(musers)
+
+} else {
+const rcpp =`@${users.split("@"[0])}`
+ musers= `@${m.sender.split("@")[0]} ${command}ed with @${users.split("@")[0]} `
+
+console.log(musers)
+}
+        const response = await axios.get(pat.url,  { responseType: 'arraybuffer' })
+        const buffer = Buffer.from(response.data, "utf-8")
+		var fetchedgif = await GIFBufferToVideoBuffer(buffer)
+		Miku.sendMessage(m.chat,{video: fetchedgif, gifPlayback:true,mentions:ment,caption:musers},{quoted:m})
+    } catch (error) {
+        console.log(error);
+    }
+}
+break
+
+case 'nom':{
+
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+    if (!m.isGroup) return replay(mess.grouponly)	
+	var pat = await fetchJson(`https://api.waifu.pics/sfw/${command}`)
+	try {
+		let messsender = m.sender
+let musers=``
+try {
+users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+
+ ment=[messsender,users]
+} catch {
+	users == "none"
+	 ment=[messsender,m.sender]
+}
+if(users == "none"){
+     musers =`@${m.sender.split("@")[0]} is eating with themself!`
+     console.log(musers)
+
+} else {
+const rcpp =`@${users.split("@"[0])}`
+ musers= `@${m.sender.split("@")[0]} is eating with @${users.split("@")[0]} `
+
+console.log(musers)
+}
+        const response = await axios.get(pat.url,  { responseType: 'arraybuffer' })
+        const buffer = Buffer.from(response.data, "utf-8")
+		var fetchedgif = await GIFBufferToVideoBuffer(buffer)
+		Miku.sendMessage(m.chat,{video: fetchedgif, gifPlayback:true,mentions:ment,caption:musers},{quoted:m})
+    } catch (error) {
+        console.log(error);
+    }
+}
+break
+
+case 'hug':{
+
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+    if (!m.isGroup) return replay(mess.grouponly)	
+	var pat = await fetchJson(`https://api.waifu.pics/sfw/${command}`)
+	try {
+		let messsender = m.sender
+let musers=``
+try {
+users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+
+ ment=[messsender,users]
+} catch {
+	users == "none"
+	 ment=[messsender,m.sender]
+}
+if(users == "none"){
+     musers =`@${m.sender.split("@")[0]} hugged themself!`
+     console.log(musers)
+
+} else {
+const rcpp =`@${users.split("@"[0])}`
+ musers= `@${m.sender.split("@")[0]} hugged @${users.split("@")[0]} `
+
+console.log(musers)
+}
+        const response = await axios.get(pat.url,  { responseType: 'arraybuffer' })
+        const buffer = Buffer.from(response.data, "utf-8")
+		var fetchedgif = await GIFBufferToVideoBuffer(buffer)
+		Miku.sendMessage(m.chat,{video: fetchedgif, gifPlayback:true,mentions:ment,caption:musers},{quoted:m})
+    } catch (error) {
+        console.log(error);
+    }
+}
+break
+
+
+case 'dance':{
+
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+    if (!m.isGroup) return replay(mess.grouponly)	
+	var pat = await fetchJson(`https://api.waifu.pics/sfw/${command}`)
+	try {
+		let messsender = m.sender
+let musers=``
+try {
+users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+
+ ment=[messsender,users]
+} catch {
+	users == "none"
+	 ment=[messsender,m.sender]
+}
+if(users == "none"){
+     musers =`@${m.sender.split("@")[0]} is dancing alone!!`
+     console.log(musers)
+
+} else {
+const rcpp =`@${users.split("@"[0])}`
+ musers= `@${m.sender.split("@")[0]} is dancing with @${users.split("@")[0]} `
+
+console.log(musers)
+}
+        const response = await axios.get(pat.url,  { responseType: 'arraybuffer' })
+        const buffer = Buffer.from(response.data, "utf-8")
+		var fetchedgif = await GIFBufferToVideoBuffer(buffer)
+		Miku.sendMessage(m.chat,{video: fetchedgif, gifPlayback:true,mentions:ment,caption:musers},{quoted:m})
+    } catch (error) {
+        console.log(error);
+    }
+}
+break
+
+case 'kill': case 'pat': case 'lick': case 'kiss': case 'bite':
+case 'bully': case 'bonk': case 'poke': case 'slap':
+case 'happy':
+case 'cuddle': case 'kick':{
+
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+    if (!m.isGroup) return replay(mess.grouponly)	
+	var pat = await fetchJson(`https://api.waifu.pics/sfw/${command}`)
+	try {
+		let messsender = m.sender
+let musers=``
+try {
+users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+
+ ment=[messsender,users]
+} catch {
+	users == "none"
+	 ment=[messsender,m.sender]
+}
+if(users == "none"){
+     musers =`@${m.sender.split("@")[0]} ${command}ed themselves!!`
+     console.log(musers)
+
+} else {
+const rcpp =`@${users.split("@"[0])}`
+ musers= `@${m.sender.split("@")[0]} ${command}ed  @${users.split("@")[0]} `
+
+console.log(musers)
+}
+        const response = await axios.get(pat.url,  { responseType: 'arraybuffer' })
+        const buffer = Buffer.from(response.data, "utf-8")
+		var fetchedgif = await GIFBufferToVideoBuffer(buffer)
+		Miku.sendMessage(m.chat,{video: fetchedgif, gifPlayback:true,mentions:ment,caption:musers},{quoted:m})
+    } catch (error) {
+        console.log(error);
+    }
+}
+break
+
+
+
+case 'yeet':
+case 'wink': case 'smile':
+case 'wave': case 'blush': case 'smug': case 'glomp':
+case 'cringe': case 'highfive':{
+
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+    if (!m.isGroup) return replay(mess.grouponly)	
+	var pat = await fetchJson(`https://api.waifu.pics/sfw/${command}`)
+	try {
+		let messsender = m.sender
+let musers=``
+try {
+users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+
+ ment=[messsender,users]
+} catch {
+	users == "none"
+	 ment=[messsender,m.sender]
+}
+if(users == "none"){
+     musers =`@${m.sender.split("@")[0]} ${command}ed at themself!`
+     console.log(musers)
+
+} else {
+const rcpp =`@${users.split("@"[0])}`
+ musers= `@${m.sender.split("@")[0]} ${command}ed at @${users.split("@")[0]} `
+
+console.log(musers)
+}
+        const response = await axios.get(pat.url,  { responseType: 'arraybuffer' })
+        const buffer = Buffer.from(response.data, "utf-8")
+		var fetchedgif = await GIFBufferToVideoBuffer(buffer)
+		Miku.sendMessage(m.chat,{video: fetchedgif, gifPlayback:true,mentions:ment,caption:musers},{quoted:m})
+    } catch (error) {
+        console.log(error);
+    }
+}
+break
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+/*
+
 case 'cry': case 'kill': case 'hug': case 'pat': case 'lick': case 'kiss': case 'bite': case 'yeet':
 case 'bully': case 'bonk': case 'wink': case 'poke': case 'nom': case 'slap': case 'smile':
 case 'wave': case 'blush': case 'smug': case 'glomp': case 'happy': case 'dance':
@@ -4182,6 +4426,7 @@ let resmain = await GIFBufferToVideoBuffer(resffj)
                                   })
 break
 
+*/
 
 
 
@@ -4494,71 +4739,71 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
       
  const helpmenu = `Konichiwa *${pushname}* Senpai,
 
-I am *Miku Nakano*, a bot developed by Fantox.
+I am *Miku Nakano*, a bot developed by *Fantox*.
 
-🍁 My prefix is:  ${prefix}
+🔰 My prefix is:  ${prefix}
 
 Here's the list of my Commands.
  
 
 
- *━━━━━━〈  Core  〉━━━━━━*
+ *━━━━━━〈  🎆 Core 🎆  〉━━━━━━*
 
-🏮 profile, help, delete, listgc, listpc, welcome, support, repo, script 
+profile, help, delete, listgc, listpc, welcome, support, repo, script 
  
- *━━━━━━〈  Owner  〉━━━━━━*
+ *━━━━━━〈  🎀 Owner 🎀  〉━━━━━━*
 
-🏮 self, public, ban, bangroup, bye, join, bye, block, unblock, broadcast 
+self, public, ban, bangroup, bye, join, bye, block, unblock, broadcast 
 
- *━━━━━━〈  Group  〉━━━━━━*
+ *━━━━━━〈  ⭕ Group ⭕  〉━━━━━━*
 
-🏮 promote, demote, revoke, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group, nsfw 
+promote, demote, revoke, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group, nsfw 
 
- *━━━━━━〈  Anti Link  〉━━━━━━*
+ *━━━━━━〈  ➰ Anti Link ➰  〉━━━━━━*
  
-🏮 antilinkgc, antilinktg, antilinktt, antilinkytch, antilinkytvid, antilinkig, antilinkfb, antilinktwit, antilinkall, antiwame
+antilinkgc, antilinktg, antilinktt, antilinkytch, antilinkytvid, antilinkig, antilinkfb, antilinktwit, antilinkall, antiwame
 
- *━━━━━━〈  Search  〉━━━━━━*
+ *━━━━━━〈  🔍 Search 🔍  〉━━━━━━*
 
-🏮 play, song, yts, lyrics, google, playstore, gimage, pinterest, image, movie, wallpaper, searchgc, happymod, wikimedia, ringtone, anime, animestory, manga, ringtone   
+play, song, yts, lyrics, google, playstore, gimage, pinterest, image, movie, wallpaper, searchgc, happymod, wikimedia, ringtone, anime, animestory, manga, ringtone   
 
- *━━━━━━〈  Convert  〉━━━━━━*
+ *━━━━━━〈  🔰 Convert 🔰  〉━━━━━━*
 
-🏮 sticker, toimg, tovideo, togif , steal, stickermeme, emojimix, tourl, tomp3, toaudio
+sticker, toimg, tovideo, togif , steal, stickermeme, emojimix, tourl, tomp3, toaudio
 
- *━━━━━━〈  Audio  〉━━━━━━*
+ *━━━━━━〈  🔉 Audio 🔉  〉━━━━━━*
 
-🏮 bass, tempo, blown, deep, earrape, fast, fat, nightcore, reverse, robot, slow, squirrel
+bass, tempo, blown, deep, earrape, fast, fat, nightcore, reverse, robot, slow, squirrel
 
- *━━━━━━〈  Reactions  〉━━━━━━*
+ *━━━━━━〈  📍 Reactions 📍  〉━━━━━━*
 
-🏮 bonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe
+bonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe
 
- *━━━━━━〈  Downloader  〉━━━━━━*
+ *━━━━━━〈  🌌 Downloader 🌌  〉━━━━━━*
 
-🏮 play, ytmp3, ytmp4, ytvideo, mediafire, instagram, igtv, facebook, fbmp3, twitter, twittermp3, tiktok, tiktokaudio, tiktoknowm, mediafire  
+play, ytmp3, ytmp4, ytvideo, mediafire, instagram, igtv, facebook, fbmp3, twitter, twittermp3, tiktok, tiktokaudio, tiktoknowm, mediafire  
 
- *━━━━━━〈  Weeb  〉━━━━━━*
+ *━━━━━━〈  🈴 Weeb 🈴  〉━━━━━━*
 
-🏮 waifu, loli, neko, ppcouple, feed, foxgirl, feed, meow, tickle, wallpaper, coffee, animenom, waifu3, neko2, feed, meow, tickle, migumin, awoo, animewallpaper2, anime, manga
+waifu, loli, neko, ppcouple, feed, foxgirl, feed, meow, tickle, wallpaper, coffee, animenom, waifu3, neko2, feed, meow, tickle, migumin, awoo, animewallpaper2, anime, manga
 
- *━━━━━━〈  Informative  〉━━━━━━*
+ *━━━━━━〈  ♨️ Informative ♨️  〉━━━━━━*
 
-🏮 animequote, quote, covid, earthquake, wiki
+animequote, quote, covid, earthquake, wiki
 
- *━━━━━━〈  Others  〉━━━━━━*
+ *━━━━━━〈  🎗 Others 🎗  〉━━━━━━*
 
-🏮 stickermeme, quotes, darkjoke 
+stickermeme, quotes, darkjoke 
 
- *━━━━━━〈  Fun  〉━━━━━━*
+ *━━━━━━〈  🎐 Fun 🎐  〉━━━━━━*
 
-🏮 truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomecheck, greatcheck, gaycheck, cutecheck, lesbiancheck, hornycheck, prettycheck, lovelycheck, uglycheck, charactercheck
+reaction, truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomecheck, greatcheck, gaycheck, cutecheck, lesbiancheck, hornycheck, prettycheck, lovelycheck, uglycheck, charactercheck
 
- *━━━━━━〈  Essentials  〉━━━━━━*
+ *━━━━━━〈  🪁 Essentials 🪁  〉━━━━━━*
 
-🏮 translate, fliptext, toletter
+translate, fliptext, toletter
 
- *━━━━━━〈  NSFW  〉━━━━━━*
+ *━━━━━━〈  💥 NSFW 💥  〉━━━━━━*
 
 🍁 Type " *${prefix}nsfw* " then enable NSFW (Admin only!) 
 
@@ -4571,12 +4816,12 @@ Here's the list of my Commands.
  『  *${global.BotName}*  』
  Powered by: *Fantox*
 
- 🍁 To use any of these commands type 
+ 🔰 To use any of these commands type 
  " *${prefix}<Command name>* ".
  
- 🍁 To get Support Group link type " *${prefix}support* ".
+ 🔰 To get Support Group link type " *${prefix}support* ".
 
- 🍁 Type " *${prefix}help* " to get full command list.`
+ 🔰 Type " *${prefix}help* " to get full command list.`
      
  let buttonshelpm = [
     {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}

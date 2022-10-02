@@ -3,10 +3,10 @@
     <img src="https://c.tenor.com/NJVFjOYEcsIAAAAC/miku-gotoubun.gif" width="610">
      
 </p>
-<h1 align="center"> Miku Nakano (Beta)
+<h1 align="center"> SANDARU MD (MULTI DIVICE)
 </h1>
 <p align="center"> 
-  Konochiwa Senpai, I am "Miku Nakano" a WhatsApp bot made by Fantox to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
+  Konochiwa Senpai, I am "SANDARU MD" a WhatsApp bot made by SANDARU to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
 
 <p align="center">
   <a href="https://github.com/FantoX001/Miku-MD/fork">
@@ -14,7 +14,7 @@
     
     
   <a href="https://github.com/FantoX001/Miku-MD/stargazers">
-    <img src="https://img.shields.io/github/stars/FantoX001/Miku-MD?style=social">
+    <img src="https://telegra.ph/file/52dfb234f433ce1f5b6a6.jpg">
   </a>
 
 <p align="center">

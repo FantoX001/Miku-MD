@@ -1,6 +1,6 @@
 {
- "name": "miku-md",
- "description": "Multi Device Whatsapp Bot By Xeon",
+ "name": "Lord-Fardeen",
+ "description": "Multi Device Whatsapp Bot By Fardeen",
  "version": "3.0.0",
  "main": "index.js",
  "type": "commonjs",
@@ -18,7 +18,7 @@
   "bot-md",
   "multi-device"
  ],
- "author": "Fantox (FantoX001)",
+ "author": "Fardeen (Lord)",
  "license": "MIT",
  "dependencies": {
   "@adiwajshing/baileys": "^4.3.0",

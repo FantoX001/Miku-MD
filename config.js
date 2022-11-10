@@ -7,20 +7,20 @@ global.autoReadAll = false
 global.antitags = true
 
 
-global.Owner = ['918101187835']
-global.OwnerNumber = ['918101187835']
-global.ownertag = ['918101187835']
-global.BotName = "Miku"
-global.packname = "Miku bot"
-global.author = "By: Fantox"
-global.OwnerName = "Fantox"
-global.BotSourceCode = "https://github.com/FantoX001/Miku-MD"
-global.SupportGroupLink = "https://chat.whatsapp.com/JcBzjRIxM5UHfuJbt0KrWt"
+global.Owner = ['918515848233']
+global.OwnerNumber = ['918515848233']
+global.ownertag = ['918515848233']
+global.BotName = "Devime"
+global.packname = "Devime bot"
+global.author = "Modified By: Shibam"
+global.OwnerName = "Shibam"
+global.BotSourceCode = "https://github.com/shibam00007/Miku-MD"
+global.SupportGroupLink = "Laura le Mera"
 global.sessionName = "session"
 
 
 
-global.prefa = ['-'] // Prefix ---  change it to anythong you want except @//
+global.prefa = ['.'] // Prefix ---  change it to anything you want except @//
 
 
 global.location = "West Bengal, India"
@@ -59,18 +59,18 @@ global.ntilink = []
 
 global.mess = {
     jobdone: 'Job done...',
-    useradmin: 'Sorry, only *Group Admins* can use this command *Baka*!',
+    useradmin: 'Sorry, only *Group Admins* can use this command *Stupid*!',
     botadmin: 'Sorry, i cant execute this command without being an *Admin* of this group.',
-    botowner: 'Only my *Owner* can use this command, Baka!',
-    grouponly: 'This command is only made for *Groups*, Baka!',
-    privateonly: 'This command is only made for *Private Chat*, Baka!',
+    botowner: 'Only my *Owner* can use this command, Stupid!',
+    grouponly: 'This command is only made for *Groups*, Stupid!',
+    privateonly: 'This command is only made for *Private Chat*, Stupid!',
     botonly: 'Only the *Bot itself* can use this command!',
     waiting: 'Chotto Matte...',
-    nolink: 'Please provide me *link*, Baka!',
+    nolink: 'Please provide me *link*, Stupid!',
     error: 'An error occurd!',
     banned: 'You are *Banned* fron using commands!',
     bangc: 'This Group is *Banned* from using Commands!',
-    nonsfw: 'Dont be a pervert Baka! This is not a NSFW enabled group!'
+    nonsfw: 'Dont be a pervert Stupid! This is not a NSFW enabled group!'
     
 }
 

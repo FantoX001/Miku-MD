@@ -96,22 +96,22 @@ Miku.ev.on('groups.update', async pea => {
         }
         let wm_fatih = { url : ppgc }
         if (pea[0].announce == true) {
-        //Miku.send5ButImg(pea[0].id, `Grop has been *Closed!* Only *Admins* can send Messages!`, `Miku Bot`, wm_fatih, [])
+        //Miku.send5ButImg(pea[0].id, `Grop has been *Closed!* Only *Admins* can send Messages!`, `Devime Bot`, wm_fatih, [])
 
         Miku.sendMessage(m.chat, { image: wm_fatih, caption: 'Grop has been *Closed!* Only *Admins* can send Messages!'})
         } else if(pea[0].announce == false) {
-       // Miku.send5ButImg(pea[0].id, `Grop has been *Opened!* Now *Everyone* can send Messages!`, `Miku Bot`, wm_fatih, [])
+       // Miku.send5ButImg(pea[0].id, `Grop has been *Opened!* Now *Everyone* can send Messages!`, `Devime Bot`, wm_fatih, [])
        Miku.sendMessage(m.chat, { image: wm_fatih, caption: 'Grop has been *Opened!* Now *Everyone* can send Messages!'})
         } else if (pea[0].restrict == true) {
-        //Miku.send5ButImg(pea[0].id, `Group Info modification has been *Restricted*, Now only *Admins* can edit Group Info !`, `Miku Bot`, wm_fatih, [])
+        //Miku.send5ButImg(pea[0].id, `Group Info modification has been *Restricted*, Now only *Admins* can edit Group Info !`, `Devime Bot`, wm_fatih, [])
         Miku.sendMessage(m.chat, { image: wm_fatih, caption: 'Group Info modification has been *Restricted*, Now only *Admins* can edit Group Info !'})
         } else if (pea[0].restrict == false) {
-        //Miku.send5ButImg(pea[0].id, `Group Info modification has been *Un-Restricted*, Now only *Everyone* can edit Group Info !`, `Miku Bot`, wm_fatih, [])
+        //Miku.send5ButImg(pea[0].id, `Group Info modification has been *Un-Restricted*, Now only *Everyone* can edit Group Info !`, `Devime Bot`, wm_fatih, [])
         Miku.sendMessage(m.chat, { image: wm_fatih, caption: 'Group Info modification has been *Un-Restricted*, Now only *Everyone* can edit Group Info !'})
         } else {
-        //Miku.send5ButImg(pea[0].id, `Group Subject has been uhanged To:\n\n*${pea[0].subject}*`, `Miku Bot`, wm_fatih, [])
+        //Miku.send5ButImg(pea[0].id, `Group Subject has been uhanged To:\n\n*${pea[0].subject}*`, `Devime Bot`, wm_fatih, [])
         mikutextddfq =`Group Subject has been updated To:\n\n*${pea[0].subject}*`
-        Miku.sendMessage(pea[0].id, { image: wm_fatih, caption: mikutextddfq})
+        Miku.sendMessage(pea[0].id, { image: wm_fatih, caption: devimetextddfq})
       }
      })
 
@@ -152,7 +152,7 @@ Miku.ev.on('group-participants.update', async (anu) => {
                 mikutext = `
 Hello @${WAuserName.split("@")[0]},
 
-I am *Miku Nakano*, Welcome to ${metadata.subject}.
+I am *Devime*, Welcome to ${metadata.subject}.
 
 *Group Description:*
 ${metadata.desc}

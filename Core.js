@@ -3894,7 +3894,7 @@ if (!m.isGroup) return replay(mess.grouponly)
 if (!AntiNsfw) return reply(mess.nonsfw)
 try{
 reply(mess.waiting)
-NoHorny = await fetchJson(`https://api-reysekha.herokuapp.com/api/nsfw/${command}`)
+NoHorny = await fetchJson(`https://api-reysekha.herokuapp.com/api/nsfw/${command}?apikey=APIKEY`)
 YesHorny = await getBuffer(NoHorny.result)
 Miku.sendMessage(from, {image:YesHorny},{quoted:m})
 } catch (e) {error("Error")}	

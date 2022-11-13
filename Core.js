@@ -1407,6 +1407,9 @@ return list[Math.floor(list.length * Math.random())]
     if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
       reply (`Mention not *${pushname}* 😇. I am a bot afterall.`);
     }      
+    if (smallinput.includes('chutiya')|| smallinput.includes('bsdk') || smallinput.includes('fuck')) {
+      reply (`*${pushname}* haramkhor Teri Puri khandan chutiya mother-fuckes ki hai bsdk.`);
+    }      
 
 switch(command) {
 	
@@ -1786,7 +1789,7 @@ if (isBanChat) return reply(mess.bangc)
 if (!args.join(" ")) return reply('Where is the emoji?')
 emoji.get(args.join(" ")).then(async(emoji) => {
 let mese = await Miku.sendMessage(m.chat, {image:{url:emoji.images[4].url}, caption: `Here it is...`}, {quoted:m})
-await Miku.sendMessage(from, {text:"reply -s to this image to make sticker"}, {quoted:mese})
+await Miku.sendMessage(from, {text:"reply ${prefix}s to this image to make sticker"}, {quoted:mese})
 })
 }
 break
@@ -4738,87 +4741,285 @@ replay('Broadcast Sent !')
 break    
 
 
+case 'dipu': case 'dipanwita': case 'dipusan': case 'affu': case 'vanshika': case 'sahrish':
+    if (isBan) return reply (mess.banned)
+    if (isBanChat) return reply (mess.bangc)
+reply (`I love you *${pushname}*🖤.Please marry with me 👩‍❤️‍👨.`)
+break
+
+case 'am': case 'satriya': case 'aftermotion':
+    if (isBan) return reply (mess.banned)
+    if (isBanChat) return reply (mess.bangc)
+reply (`Hello *${pushname}* this is the latest link of aftermotion :
+http://bit.ly/satriyhaid.`)
+break
+
+
+
+
+
 case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
       
- const helpmenu = `Konichiwa *${pushname}* Senpai,
+ const helpmenu = `Namoskar *${pushname}* bondhu,kaise ho? agar merese help chahiye to mere commands use karo
 
-I am *Devime*, a bot modified by *Shibam*.
+I am *Devime*, a bot modified by *shibam*.
 
 🔰 My prefix is:  ${prefix}
 
 Here's the list of my Commands.
-
-
+.
+┌───『 𝓗𝓪𝓷𝓭𝓸𝓾𝓽 』───
+┌───『 𝓗𝓪𝓷𝓭𝓸𝓾𝓽 』──
+│⊶ 𝑼𝒔𝒆 ${prefix}𝒉𝒆𝒍𝒑 𝒕𝒐 𝒔𝒆𝒆 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒔
+│⊶ 𝑹𝒆𝒂𝒅 𝑩𝒐𝒕𝒕𝒐 𝒓𝒖𝒍𝒆𝒔 𝒃𝒆𝒇𝒐𝒓𝒆 𝒖𝒔𝒆
+│⊶ 𝑹𝒆𝒂𝒅 𝑩𝒐𝒕's 𝒓𝒖𝒍𝒆𝒔 𝒃𝒆𝒇𝒐𝒓𝒆 𝒖𝒔𝒆
+│⊶ 𝑹𝒆𝒑𝒐𝒓𝒕 𝒂 𝒃𝒖𝒈 ${prefix}𝐨𝐰𝐧𝐞𝐫
+└──☘︎─────☘︎────☘︎────☘︎
+└──☘︎───☘︎───☘︎────☘︎
+╔════⧫🧧𝑪𝒐𝒓𝒆🧧
+║
+║ ${prefix}profile
+║ ${prefix}help
+║ ${prefix}delete
+║ ${prefix}listgc
+║ ${prefix}listpc
+║ ${prefix}support
+║ ${prefix}repo
+║ ${prefix}script
+║
+╚════════════╝ 
+╔════⧫🎀𝑶𝒘𝒏𝒆𝒓🎀
+║
+║ ${prefix}self
+║ ${prefix}public
+║ ${prefix}ban
+║ ${prefix}bangroup
+║ ${prefix}bye
+║ ${prefix}join
+║ ${prefix}block
+║ ${prefix}unblock
+║ ${prefix}broadcast
+║
+╚════════════╝
+╔════⧫👥𝑮𝒓𝒐𝒖𝒑👥
+║
+║ ${prefix}promote
+║ ${prefix}demote
+║ ${prefix}revoke
+║ ${prefix}add
+║ ${prefix}remove
+║ ${prefix}tagall
+║ ${prefix}hidetag
+║ ${prefix}groupsetting
+║ ${prefix}grouplink
+║ ${prefix}setgcpp
+║ ${prefix}setname
+║ ${prefix}setdesc
+║ ${prefix}group
+║ ${prefix}nsfw
+║ ${prefix}welcome
+║
+╚════════════╝
+╔════⧫⛓️𝑨𝒏𝒕𝒊 𝑳𝒊𝒏𝒌⛓️
+║
+║ ${prefix}antilinkgc
+║ ${prefix}antilinktg
+║ ${prefix}antilinktt
+║ ${prefix}antilinkytch
+║ ${prefix}antilinkytvid
+║ ${prefix}antilinkig
+║ ${prefix}antilinkfb
+║ ${prefix}antilinktwit
+║ ${prefix}antilinkall
+║ ${prefix}antiwame
+║
+╚════════════╝
+╔════⧫🔎𝑺𝒆𝒂𝒓𝒄𝒉🔍
+║
+║ ${prefix}play
+║ ${prefix}song
+║ ${prefix}yts
+║ ${prefix}lyrics
+║ ${prefix}google
+║ ${prefix}playstore
+║ ${prefix}gimage
+║ ${prefix}pinterest
+║ ${prefix}image
+║ ${prefix}movie
+║ ${prefix}wallpaper
+║ ${prefix}searchgc
+║ ${prefix}happymod
+║ ${prefix}wikimedia
+║ ${prefix}ringtone
+║ ${prefix}anime
+║ ${prefix}animestory
+║ ${prefix}manga
+║
+╚════════════╝
+╔════⧫⚙️𝑪𝒐𝒏𝒗𝒆𝒓𝒕⚙️
+║
+║ ${prefix}sticker
+║ ${prefix}toimg
+║ ${prefix}tovideo
+║ ${prefix}togif
+║ ${prefix}steal
+║ ${prefix}stickermeme
+║ ${prefix}emojimix
+║ ${prefix}tourl
+║ ${prefix}tomp3
+║ ${prefix}toaudio
+║
+╚════════════╝
+╔════⧫🔉𝑨𝒖𝒅𝒊𝒐🔉
+║
+║ ${prefix}bass
+║ ${prefix}tempo
+║ ${prefix}blown
+║ ${prefix}deep
+║ ${prefix}earrape
+║ ${prefix}fast
+║ ${prefix}fat
+║ ${prefix}nightcore
+║ ${prefix}reverse
+║ ${prefix}robot
+║ ${prefix}slow
+║ ${prefix}squirrel
+║
+╚════════════╝
+╔════⧫💥𝑹𝒆𝒂𝒄𝒕𝒊𝒐𝒏𝒔💥
+║
+║ ${prefix}bonk
+║ ${prefix}cry
+║ ${prefix}bully
+║ ${prefix}cuddle
+║ ${prefix}hug
+║ ${prefix}kiss
+║ ${prefix}lick
+║ ${prefix}pat
+║ ${prefix}smug
+║ ${prefix}yeet
+║ ${prefix}blush
+║ ${prefix}smile
+║ ${prefix}wave
+║ ${prefix}highfive
+║ ${prefix}handhold
+║ ${prefix}nom
+║ ${prefix}glomp
+║ ${prefix}bite
+║ ${prefix}slap
+║ ${prefix}kill
+║ ${prefix}happy
+║ ${prefix}wink
+║ ${prefix}poke
+║ ${prefix}dance
+║ ${prefix}cringe
+║
+╚════════════╝
  
- *━━━〈  🎆 Core 🎆  〉━━━*
-
-speak, miku, stalk, profile, help, delete, deleteall, listgc, listpc, welcome, support, repo, script 
+╔════⧫📥𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅𝒆𝒓📥
+║
+║ ${prefix}play
+║ ${prefix}ytmp3
+║ ${prefix}ytmp4
+║ ${prefix}ytvideo
+║ ${prefix}mediafire
+║ ${prefix}instagram
+║ ${prefix}igtv
+║ ${prefix}facebook
+║ ${prefix}fbmp3
+║ ${prefix}twitter
+║ ${prefix}twittermp3
+║ ${prefix}tiktok
+║ ${prefix}tiktokaudio
+║ ${prefix}tiktoknowm
+║
+╚════════════╝
  
- *━━━〈  🎀 Owner 🎀  〉━━━*
-
-self, public, ban, bangroup, bye, join, bye, block, unblock, broadcast 
-
- *━━━〈  ⭕ Group ⭕  〉━━━*
+╔════⧫☄️𝑾𝒆𝒆𝒃☄️
+║
+║ ${prefix}waifu
+║ ${prefix}loli
+║ ${prefix}neko
+║ ${prefix}ppcouple
+║ ${prefix}feed
+║ ${prefix}foxgirl
+║ ${prefix}meow
+║ ${prefix}tickle
+║ ${prefix}wallpaper
+║ ${prefix}coffee
+║ ${prefix}animenom
+║ ${prefix}waifu3
+║ ${prefix}neko2
+║ ${prefix}migumin
+║ ${prefix}awoo
+║ ${prefix}anime
+║ ${prefix}animewallpaper2
+║ ${prefix}manga
+║
+╚════════════╝
  
-promote, demote, revoke, add, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group, nsfw 
-
- *━━━〈  ➰ Anti Link ➰  〉━━━*
+╔════⧫📣𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒕𝒊𝒗𝒆📣
+║
+║ ${prefix}animequote
+║ ${prefix}quote
+║ ${prefix}covid
+║ ${prefix}earthquake
+║ ${prefix}wiki
+║
+╚════════════╝
  
-antilinkgc, antilinktg, antilinktt, antilinkytch, antilinkytvid, antilinkig, antilinkfb, antilinktwit, antilinkall, antiwame
-
- *━━━〈  🔍 Search 🔍  〉━━━*
-
-play, ytmp3, ytmp4, yts, lyrics, google, gimage, pinterest, image, weather, movie, wallpaper, searchgc, happymod, wikimedia, ringtone, anime, animestory, manga, ringtone  
-
- *━━━〈  🔰 Convert 🔰  〉━━━*
-
-sticker, toimg, tovideo, togif , steal, stickermeme, emojimix, tourl, tomp3, toaudio
-
- *━━━〈  🔉 Audio 🔉  〉━━━*
-
-bass, tempo, blown, deep, earrape, fast, fat, nightcore, reverse, robot, slow, squirrel
-
- *━━━〈  📍 Reactions 📍  〉━━━*
-
-bonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe
-
- *━━━〈  🌌 Downloader 🌌  〉━━━*
-
-play, ytmp3, ytmp4, ytvideo, mediafire, instagram, igtv, facebook, fbmp3, twitter, twittermp3, tiktok, tiktokaudio, tiktoknowm, mediafire  
-
- *━━━〈  🈴 Weeb 🈴  〉━━━*
-
-crosplay, waifu, loli, neko, ppcouple, feed, foxgirl, feed, meow, tickle, wallpaper, coffee, animenom, waifu3, neko2, feed, meow, tickle, migumin, awoo, animewallpaper2, anime, manga
-
- *━━━〈  ♨️ Informative ♨️  〉━━━*
-
-animequote, quote, covid, earthquake, wiki
-
- *━━━〈  🎗 Others 🎗  〉━━━*
-
-stickermeme, quotes, darkjoke 
-
- *━━━〈  🎐 Fun 🎐  〉━━━*
-
-reaction, truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomecheck, greatcheck, gaycheck, cutecheck, lesbiancheck, hornycheck, prettycheck, lovelycheck, uglycheck, charactercheck
-
- *━━━〈  🪁 Essentials 🪁  〉━━━*
-
-qr, say, translate, fliptext, toletter, weather
-
- *━━━〈  💥 NSFW 💥  〉━━━*
-
-🍁 Type " *${prefix}nsfw* " then enable NSFW (Admin only!) 
-
-🍁 Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
-
-
-
+╔════⧫🦋𝑭𝒖𝒏🦋
+║
+║ ${prefix}pervertcheck
+║ ${prefix}reaction
+║ ${prefix}truth
+║ ${prefix}dare
+║ ${prefix}couple
+║ ${prefix}soulmate
+║ ${prefix}handsomecheck
+║ ${prefix}beautifulcheck
+║ ${prefix}awesomecheck
+║ ${prefix}greatcheck
+║ ${prefix}chutiyacheck
+║ ${prefix}ganducheck
+║ ${prefix}maturecheck
+║ ${prefix}gaycheck
+║ ${prefix}cutecheck
+║ ${prefix}lesbiancheck
+║ ${prefix}hornycheck
+║ ${prefix}prettycheck
+║ ${prefix}lovelycheck
+║ ${prefix}uglycheck
+║ ${prefix}charactercheck
+║ ${prefix}devime
+║ ${prefix}setbotpp
+║ ${prefix}stickermeme
+║ ${prefix}staminacheck
+║ ${prefix}chutiyacheck
+║
+╚════════════╝
+ 
+╔════⧫🐬𝑬𝒔𝒔𝒆𝒏𝒕𝒊𝒂𝒍/𝑶𝒕𝒉𝒆𝒓𝒔🐬
+║
+║ ${prefix}translate
+║ ${prefix}fliptext
+║ ${prefix}toletter
+║ ${prefix}weather
+║
+╚════════════╝
+ 
+╔════⧫🐾𝑵𝑺𝑭𝑾 🐾
+║
+║ 🍊 Type " *${prefix}nsfw* " then enable NSFW (Admin only!) 
+║
+║  🍑 Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
+╚════════════╝
+/*
 
  『  *${global.BotName}*  』
- Powered by: *Shibam*
+ Powered by: *Devime*
 
  🔰 To use any of these commands type 
  " *${prefix}<Command name>* ".
@@ -4826,6 +5027,8 @@ qr, say, translate, fliptext, toletter, weather
  🔰 To get Support Group link type " *${prefix}support* ".
 
  🔰 Type " *${prefix}help* " to get full command list.`
+
+ 
     
 
  let buttonshelpm = [

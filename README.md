@@ -25,7 +25,7 @@
       
 </br> 
    
-## ✧✧ Temporarily not Maintained anymore. Thank You so much guys for your love and support 💕. 
+## ✧✧ Temporarily little bit Maintained for bug fixes. Thank You so much guys for your love and support 💕. 
 </br></br>
   
   
@@ -61,6 +61,7 @@
 <br>
 
 ```
+✧ Fixed Heroku account ban issue.
 ✧ Added Weather command. [Usage: -weather Kolkata]
 ✧ Fixed a critical security related vulnerability.
 ✧ Added single config prefix changing facility.

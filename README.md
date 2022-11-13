@@ -56,11 +56,12 @@
 <br>
   
 ## ✧✧✧ Recent Patch notes
-<details open>
+<details close>
 <summary>Read recent Patch notes of Miku</summary>
 <br>
 
 ```
+✧ Added Forever worker again and removed pm2.
 ✧ Fixed Heroku account ban issue.
 ✧ Added Weather command. [Usage: -weather Kolkata]
 ✧ Fixed a critical security related vulnerability.
@@ -80,8 +81,7 @@
 </details>
 
 ## ✧✧✧ Why use Miku as your Base?
-<details open>
-<summary>Highlights of Miku MD</summary>
+
 <br>
 
 ```
@@ -101,7 +101,6 @@
 -regards FantoX001
 ```
 
-</details>
 </br>
 
 ## ✧✧✧ Video tutorial for Heroku Deploy:

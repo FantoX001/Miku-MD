@@ -4881,11 +4881,11 @@ if (/1917/.test(command)) link = 'https://textpro.me/1917-style-text-effect-onli
 if (/leaves/.test(command)) link = 'https://textpro.me/natural-leaves-text-effect-931.html'
 let anu = await maker.textpro(link, q)
 Miku.sendMessage(m.chat, { image: { url: anu }, caption: `Made by ${global.botname}` ,  quoted: m, contextInfo: { externalAdReply:{
-  title:Devime,
+  title:botname,
   body:caption,
   showAdAttribution: true,
   mediaType:2,
-  thumbnail: Devime ,
+  thumbnail: thumbwiz,
   mediaUrl:tutorial, 
 sourceUrl: tutorial }}}, {quoted: m})
 }

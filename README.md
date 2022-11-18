@@ -25,7 +25,7 @@
       
 </br> 
    
-## ✧✧ Temporarily little bit Maintained for bug fixes. Thank You so much guys for your love and support 💕. 
+### ✧✧ Maintained by [Fantox](https://github.com/FantoX001) for bug fixes and more improments. More features  are coming soon. Check this main repo once in week to stay updated about latest updates.
 </br></br>
   
   

@@ -1407,6 +1407,9 @@ return list[Math.floor(list.length * Math.random())]
     if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
       reply (`Mention not *${pushname}* 😇. I am a bot afterall.`);
     }      
+    if (smallinput.includes('chutiya')|| smallinput.includes('bsdk') || smallinput.includes('fuck')) {
+      reply (`*${pushname}* haramkhor Teri Puri khandan chutiya mother-fuckes ki hai bsdk.`);
+    }      
 
 switch(command) {
 	
@@ -1786,7 +1789,7 @@ if (isBanChat) return reply(mess.bangc)
 if (!args.join(" ")) return reply('Where is the emoji?')
 emoji.get(args.join(" ")).then(async(emoji) => {
 let mese = await Miku.sendMessage(m.chat, {image:{url:emoji.images[4].url}, caption: `Here it is...`}, {quoted:m})
-await Miku.sendMessage(from, {text:"reply -s to this image to make sticker"}, {quoted:mese})
+await Miku.sendMessage(from, {text:"reply ${prefix}s to this image to make sticker"}, {quoted:mese})
 })
 }
 break
@@ -3625,8 +3628,12 @@ case 'beautifulcheck':
 					const can = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const tik = can[Math.floor(Math.random() * can.length)]
 Miku.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${tik}%*` }, { quoted: m })
-					break
 
+break
+
+case 'chutiyacheck':					
+case 'staminacheck':
+case 'pervertcheck':
 case 'awesomecheck':
   case 'greatcheck':
     case 'gaycheck':
@@ -3873,6 +3880,11 @@ Miku.sendMessage(m.chat, { document : { url : baby1[0].link}, fileName : baby1[0
 }
 break
 
+
+
+
+
+
 case 'masturbation': case 'jahy': case 'hentai': case 'glasses': case 'gangbang': case 'foot': 
 case 'femdom': case 'cum': case 'ero': case 'cuckold': case 'blowjob': case 'bdsm': 
 case 'ahegao': case 'ass': case 'orgy': case 'panties': case 'pussy': case 'thighs': case 'yuri': case 'tentacles':
@@ -3882,7 +3894,7 @@ if (!m.isGroup) return replay(mess.grouponly)
 if (!AntiNsfw) return reply(mess.nonsfw)
 try{
 reply(mess.waiting)
-NoHorny = await fetchJson(`https://myselfff.herokuapp.com/docs/nsfw/${command}`)
+NoHorny = await fetchJson(`https://api-reysekha.herokuapp.com/api/nsfw/${command}?apikey=APIKEY`)
 YesHorny = await getBuffer(NoHorny.result)
 Miku.sendMessage(from, {image:YesHorny},{quoted:m})
 } catch (e) {error("Error")}	
@@ -4734,87 +4746,415 @@ replay('Broadcast Sent !')
 break    
 
 
+case 'dipu': case 'dipanwita': case 'dipusan': case 'affu': case 'vanshika': case 'sahrish':
+    if (isBan) return reply (mess.banned)
+    if (isBanChat) return reply (mess.bangc)
+reply (`I love you *${pushname}*🖤.Please marry with me 👩‍❤️‍👨.`)
+break
+
+case 'am': case 'satriya': case 'aftermotion':
+    if (isBan) return reply (mess.banned)
+    if (isBanChat) return reply (mess.bangc)
+reply (`Hello *${pushname}* this is the latest link of aftermotion :
+http://bit.ly/satriyhaid.`)
+break
+
+
+
+//----TEXTPRO--------\\
+case 'candy':
+case 'christmas': 
+case '3dchristmas': 
+case 'sparklechristmas':
+case 'deepsea': 
+case 'scifi': 
+case 'rainbow2': 
+case 'waterpipe': 
+case 'spooky': 
+case 'pencil': 
+case 'circuit': 
+case 'discovery': 
+case 'metalic': 
+case 'fiction': 
+case 'demon': 
+case 'transformer': 
+case 'berry': 
+case 'thunder': 
+case '3dstone2': 
+case 'neonlight': 
+case 'glitch': 
+case 'harrypotter': 
+case 'brokenglass': 
+case 'papercut': 
+case 'watercolor': 
+case 'multicolor': 
+case 'neondevil': 
+case 'underwater': 
+case 'graffitibike':
+case 'snow': 
+case 'cloud': 
+case 'honey': 
+case 'ice': 
+case 'fruitjuice': 
+case 'biscuit': 
+case 'wood': 
+case 'chocolate': 
+case 'strawberry': 
+case 'matrix': 
+case 'blood': 
+case 'dropwater': 
+case 'toxic': 
+case 'lava': 
+case 'rock': 
+case 'bloodglas': 
+case 'halloween': 
+case 'darkgold': 
+case 'joker': 
+case 'wicker':
+case 'firework': 
+case 'skeleton': 
+case 'blackpink': 
+case 'sand': 
+case 'glue': 
+case '1917': 
+case 'leaves': 
+case 'demon': {
+if (!q) return reply(`Example : ${prefix + command} ${global.ownername}`) 
+reply(mess.wait)
+let link
+if (/candy/.test(command)) link = 'https://textpro.me/create-christmas-candy-cane-text-effect-1056.html'
+if (/christmas/.test(command)) link = 'https://textpro.me/christmas-tree-text-effect-online-free-1057.html'
+if (/3dchristmas/.test(command)) link = 'https://textpro.me/3d-christmas-text-effect-by-name-1055.html'
+if (/sparklechristmas/.test(command)) link = 'https://textpro.me/sparkles-merry-christmas-text-effect-1054.html'
+if (/deepsea/.test(command)) link = 'https://textpro.me/create-3d-deep-sea-metal-text-effect-online-1053.html'
+if (/scifi/.test(command)) link = 'https://textpro.me/create-3d-sci-fi-text-effect-online-1050.html'
+if (/rainbow/.test(command)) link = 'https://textpro.me/3d-rainbow-color-calligraphy-text-effect-1049.html'
+if (/waterpipe/.test(command)) link = 'https://textpro.me/create-3d-water-pipe-text-effects-online-1048.html'
+if (/spooky/.test(command)) link = 'https://textpro.me/create-halloween-skeleton-text-effect-online-1047.html'
+if (/pencil/.test(command)) link = 'https://textpro.me/create-a-sketch-text-effect-online-1044.html'
+if (/circuit/.test(command)) link = 'https://textpro.me/create-blue-circuit-style-text-effect-online-1043.html'
+if (/discovery/.test(command)) link = 'https://textpro.me/create-space-text-effects-online-free-1042.html'
+if (/metalic/.test(command)) link = 'https://textpro.me/creat-glossy-metalic-text-effect-free-online-1040.html'
+if (/fiction/.test(command)) link = 'https://textpro.me/create-science-fiction-text-effect-online-free-1038.html'
+if (/demon/.test(command)) link = 'https://textpro.me/create-green-horror-style-text-effect-online-1036.html'
+if (/transformer/.test(command)) link = 'https://textpro.me/create-a-transformer-text-effect-online-1035.html'
+if (/berry/.test(command)) link = 'https://textpro.me/create-berry-text-effect-online-free-1033.html'
+if (/thunder/.test(command)) link = 'https://textpro.me/online-thunder-text-effect-generator-1031.html'
+if (/magma/.test(command)) link = 'https://textpro.me/create-a-magma-hot-text-effect-online-1030.html'
+if (/3dstone2/.test(command)) link = 'https://textpro.me/create-a-3d-stone-text-effect-online-for-free-1073.html'
+if (/neonlight/.test(command)) link = 'https://textpro.me/create-3d-neon-light-text-effect-online-1028.html'
+if (/glitch/.test(command)) link = 'https://textpro.me/create-impressive-glitch-text-effects-online-1027.html'
+if (/harrypotter/.test(command)) link = 'https://textpro.me/create-harry-potter-text-effect-online-1025.html'
+if (/brokenglass/.test(command)) link = 'https://textpro.me/broken-glass-text-effect-free-online-1023.html'
+if (/papercut/.test(command)) link = 'https://textpro.me/create-art-paper-cut-text-effect-online-1022.html'
+if (/watercolor/.test(command)) link = 'https://textpro.me/create-a-free-online-watercolor-text-effect-1017.html'
+if (/multicolor/.test(command)) link = 'https://textpro.me/online-multicolor-3d-paper-cut-text-effect-1016.html'
+if (/neondevil/.test(command)) link = 'https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html'
+if (/underwater/.test(command)) link = 'https://textpro.me/3d-underwater-text-effect-generator-online-1013.html'
+if (/graffitibike/.test(command)) link = 'https://textpro.me/create-wonderful-graffiti-art-text-effect-1011.html'
+if (/snow/.test(command)) link = 'https://textpro.me/create-snow-text-effects-for-winter-holidays-1005.html'
+if (/cloud/.test(command)) link = 'https://textpro.me/create-a-cloud-text-effect-on-the-sky-online-1004.html'
+if (/honey/.test(command)) link = 'https://textpro.me/honey-text-effect-868.html'
+if (/ice/.test(command)) link = 'https://textpro.me/ice-cold-text-effect-862.html'
+if (/fruitjuice/.test(command)) link = 'https://textpro.me/fruit-juice-text-effect-861.html'
+if (/biscuit/.test(command)) link = 'https://textpro.me/biscuit-text-effect-858.html'
+if (/wood/.test(command)) link = 'https://textpro.me/wood-text-effect-856.html'
+if (/chocolate/.test(command)) link = 'https://textpro.me/chocolate-cake-text-effect-890.html'
+if (/strawberry/.test(command)) link = 'https://textpro.me/strawberry-text-effect-online-889.html'
+if (/matrix/.test(command)) link = 'https://textpro.me/matrix-style-text-effect-online-884.html'
+if (/blood/.test(command)) link = 'https://textpro.me/horror-blood-text-effect-online-883.html'
+if (/dropwater/.test(command)) link = 'https://textpro.me/dropwater-text-effect-872.html'
+if (/toxic/.test(command)) link = 'https://textpro.me/toxic-text-effect-online-901.html'
+if (/lava/.test(command)) link = 'https://textpro.me/lava-text-effect-online-914.html'
+if (/rock/.test(command)) link = 'https://textpro.me/rock-text-effect-online-915.html'
+if (/bloodglas/.test(command)) link = 'https://textpro.me/blood-text-on-the-frosted-glass-941.html'
+if (/halloween/.test(command)) link = 'https://textpro.me/halloween-fire-text-effect-940.html'
+if (/darkgold/.test(command)) link = 'https://textpro.me/metal-dark-gold-text-effect-online-939.html'
+if (/joker/.test(command)) link = 'https://textpro.me/create-logo-joker-online-934.html'
+if (/wicker/.test(command)) link = 'https://textpro.me/wicker-text-effect-online-932.html'
+if (/firework/.test(command)) link = 'https://textpro.me/firework-sparkle-text-effect-930.html'
+if (/skeleton/.test(command)) link = 'https://textpro.me/skeleton-text-effect-online-929.html'
+if (/blackpink/.test(command)) link = 'https://textpro.me/create-blackpink-logo-style-online-1001.html'
+if (/sand/.test(command)) link = 'https://textpro.me/write-in-sand-summer-beach-free-online-991.html'
+if (/glue/.test(command)) link = 'https://textpro.me/create-3d-glue-text-effect-with-realistic-style-986.html'
+if (/1917/.test(command)) link = 'https://textpro.me/1917-style-text-effect-online-980.html'
+if (/leaves/.test(command)) link = 'https://textpro.me/natural-leaves-text-effect-931.html'
+let anu = await maker.textpro(link, q)
+Miku.sendMessage(m.chat, { image: { url: anu }, caption: `Made by ${global.botname}` ,  quoted: m, contextInfo: { externalAdReply:{
+  title:botname,
+  body:caption,
+  showAdAttribution: true,
+  mediaType:2,
+  thumbnail: thumbwiz,
+  mediaUrl:tutorial, 
+sourceUrl: tutorial }}}, {quoted: m})
+}
+//----END HERE--------\\
+
+
+
 case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
       
- const helpmenu = `Konichiwa *${pushname}* Senpai,
+ const helpmenu = `Namoskar *${pushname}* bondhu,kaise ho? agar merese help chahiye to mere commands use karo
 
-I am *Miku Nakano*, a bot developed by *Fantox*.
+I am *Devime*, a bot modified by *shibam*.
 
 🔰 My prefix is:  ${prefix}
 
 Here's the list of my Commands.
-
-
+.
+┌───『 𝓗𝓪𝓷𝓭𝓸𝓾𝓽 』───
+┌───『 𝓗𝓪𝓷𝓭𝓸𝓾𝓽 』──
+│⊶ 𝑼𝒔𝒆 ${prefix}𝒉𝒆𝒍𝒑 𝒕𝒐 𝒔𝒆𝒆 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒔
+│⊶ 𝑹𝒆𝒂𝒅 𝑩𝒐𝒕𝒕𝒐 𝒓𝒖𝒍𝒆𝒔 𝒃𝒆𝒇𝒐𝒓𝒆 𝒖𝒔𝒆
+│⊶ 𝑹𝒆𝒂𝒅 𝑩𝒐𝒕's 𝒓𝒖𝒍𝒆𝒔 𝒃𝒆𝒇𝒐𝒓𝒆 𝒖𝒔𝒆
+│⊶ 𝑹𝒆𝒑𝒐𝒓𝒕 𝒂 𝒃𝒖𝒈 ${prefix}𝐨𝐰𝐧𝐞𝐫
+└──☘︎─────☘︎────☘︎────☘︎
+└──☘︎───☘︎───☘︎────☘︎
+╔════⧫🧧𝑪𝒐𝒓𝒆🧧
+║
+║ ${prefix}profile
+║ ${prefix}help
+║ ${prefix}delete
+║ ${prefix}listgc
+║ ${prefix}listpc
+║ ${prefix}support
+║ ${prefix}repo
+║ ${prefix}script
+║
+╚════════════╝ 
+╔════⧫🎀𝑶𝒘𝒏𝒆𝒓🎀
+║
+║ ${prefix}self
+║ ${prefix}public
+║ ${prefix}ban
+║ ${prefix}bangroup
+║ ${prefix}bye
+║ ${prefix}join
+║ ${prefix}block
+║ ${prefix}unblock
+║ ${prefix}broadcast
+║
+╚════════════╝
+╔════⧫👥𝑮𝒓𝒐𝒖𝒑👥
+║
+║ ${prefix}promote
+║ ${prefix}demote
+║ ${prefix}revoke
+║ ${prefix}add
+║ ${prefix}remove
+║ ${prefix}tagall
+║ ${prefix}hidetag
+║ ${prefix}groupsetting
+║ ${prefix}grouplink
+║ ${prefix}setgcpp
+║ ${prefix}setname
+║ ${prefix}setdesc
+║ ${prefix}group
+║ ${prefix}nsfw
+║ ${prefix}welcome
+║
+╚════════════╝
+╔════⧫⛓️𝑨𝒏𝒕𝒊 𝑳𝒊𝒏𝒌⛓️
+║
+║ ${prefix}antilinkgc
+║ ${prefix}antilinktg
+║ ${prefix}antilinktt
+║ ${prefix}antilinkytch
+║ ${prefix}antilinkytvid
+║ ${prefix}antilinkig
+║ ${prefix}antilinkfb
+║ ${prefix}antilinktwit
+║ ${prefix}antilinkall
+║ ${prefix}antiwame
+║
+╚════════════╝
+╔════⧫🔎𝑺𝒆𝒂𝒓𝒄𝒉🔍
+║
+║ ${prefix}play
+║ ${prefix}song
+║ ${prefix}yts
+║ ${prefix}lyrics
+║ ${prefix}google
+║ ${prefix}playstore
+║ ${prefix}gimage
+║ ${prefix}pinterest
+║ ${prefix}image
+║ ${prefix}movie
+║ ${prefix}wallpaper
+║ ${prefix}searchgc
+║ ${prefix}happymod
+║ ${prefix}wikimedia
+║ ${prefix}ringtone
+║ ${prefix}anime
+║ ${prefix}animestory
+║ ${prefix}manga
+║
+╚════════════╝
+╔════⧫⚙️𝑪𝒐𝒏𝒗𝒆𝒓𝒕⚙️
+║
+║ ${prefix}sticker
+║ ${prefix}toimg
+║ ${prefix}tovideo
+║ ${prefix}togif
+║ ${prefix}steal
+║ ${prefix}stickermeme
+║ ${prefix}emojimix
+║ ${prefix}tourl
+║ ${prefix}tomp3
+║ ${prefix}toaudio
+║
+╚════════════╝
+╔════⧫🔉𝑨𝒖𝒅𝒊𝒐🔉
+║
+║ ${prefix}bass
+║ ${prefix}tempo
+║ ${prefix}blown
+║ ${prefix}deep
+║ ${prefix}earrape
+║ ${prefix}fast
+║ ${prefix}fat
+║ ${prefix}nightcore
+║ ${prefix}reverse
+║ ${prefix}robot
+║ ${prefix}slow
+║ ${prefix}squirrel
+║
+╚════════════╝
+╔════⧫💥𝑹𝒆𝒂𝒄𝒕𝒊𝒐𝒏𝒔💥
+║
+║ ${prefix}bonk
+║ ${prefix}cry
+║ ${prefix}bully
+║ ${prefix}cuddle
+║ ${prefix}hug
+║ ${prefix}kiss
+║ ${prefix}lick
+║ ${prefix}pat
+║ ${prefix}smug
+║ ${prefix}yeet
+║ ${prefix}blush
+║ ${prefix}smile
+║ ${prefix}wave
+║ ${prefix}highfive
+║ ${prefix}handhold
+║ ${prefix}nom
+║ ${prefix}glomp
+║ ${prefix}bite
+║ ${prefix}slap
+║ ${prefix}kill
+║ ${prefix}happy
+║ ${prefix}wink
+║ ${prefix}poke
+║ ${prefix}dance
+║ ${prefix}cringe
+║
+╚════════════╝
  
- *━━━〈  🎆 Core 🎆  〉━━━*
-
-speak, miku, stalk, profile, help, delete, deleteall, listgc, listpc, welcome, support, repo, script 
+╔════⧫📥𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅𝒆𝒓📥
+║
+║ ${prefix}play
+║ ${prefix}ytmp3
+║ ${prefix}ytmp4
+║ ${prefix}ytvideo
+║ ${prefix}mediafire
+║ ${prefix}instagram
+║ ${prefix}igtv
+║ ${prefix}facebook
+║ ${prefix}fbmp3
+║ ${prefix}twitter
+║ ${prefix}twittermp3
+║ ${prefix}tiktok
+║ ${prefix}tiktokaudio
+║ ${prefix}tiktoknowm
+║
+╚════════════╝
  
- *━━━〈  🎀 Owner 🎀  〉━━━*
-
-self, public, ban, bangroup, bye, join, bye, block, unblock, broadcast 
-
- *━━━〈  ⭕ Group ⭕  〉━━━*
+╔════⧫☄️𝑾𝒆𝒆𝒃☄️
+║
+║ ${prefix}waifu
+║ ${prefix}loli
+║ ${prefix}neko
+║ ${prefix}ppcouple
+║ ${prefix}feed
+║ ${prefix}foxgirl
+║ ${prefix}meow
+║ ${prefix}tickle
+║ ${prefix}wallpaper
+║ ${prefix}coffee
+║ ${prefix}animenom
+║ ${prefix}waifu3
+║ ${prefix}neko2
+║ ${prefix}migumin
+║ ${prefix}awoo
+║ ${prefix}anime
+║ ${prefix}animewallpaper2
+║ ${prefix}manga
+║
+╚════════════╝
  
-promote, demote, revoke, add, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group, nsfw 
-
- *━━━〈  ➰ Anti Link ➰  〉━━━*
+╔════⧫📣𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒕𝒊𝒗𝒆📣
+║
+║ ${prefix}animequote
+║ ${prefix}quote
+║ ${prefix}covid
+║ ${prefix}earthquake
+║ ${prefix}wiki
+║
+╚════════════╝
  
-antilinkgc, antilinktg, antilinktt, antilinkytch, antilinkytvid, antilinkig, antilinkfb, antilinktwit, antilinkall, antiwame
-
- *━━━〈  🔍 Search 🔍  〉━━━*
-
-play, ytmp3, ytmp4, yts, lyrics, google, gimage, pinterest, image, weather, movie, wallpaper, searchgc, happymod, wikimedia, ringtone, anime, animestory, manga, ringtone  
-
- *━━━〈  🔰 Convert 🔰  〉━━━*
-
-sticker, toimg, tovideo, togif , steal, stickermeme, emojimix, tourl, tomp3, toaudio
-
- *━━━〈  🔉 Audio 🔉  〉━━━*
-
-bass, tempo, blown, deep, earrape, fast, fat, nightcore, reverse, robot, slow, squirrel
-
- *━━━〈  📍 Reactions 📍  〉━━━*
-
-bonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe
-
- *━━━〈  🌌 Downloader 🌌  〉━━━*
-
-play, ytmp3, ytmp4, ytvideo, mediafire, instagram, igtv, facebook, fbmp3, twitter, twittermp3, tiktok, tiktokaudio, tiktoknowm, mediafire  
-
- *━━━〈  🈴 Weeb 🈴  〉━━━*
-
-crosplay, waifu, loli, neko, ppcouple, feed, foxgirl, feed, meow, tickle, wallpaper, coffee, animenom, waifu3, neko2, feed, meow, tickle, migumin, awoo, animewallpaper2, anime, manga
-
- *━━━〈  ♨️ Informative ♨️  〉━━━*
-
-animequote, quote, covid, earthquake, wiki
-
- *━━━〈  🎗 Others 🎗  〉━━━*
-
-stickermeme, quotes, darkjoke 
-
- *━━━〈  🎐 Fun 🎐  〉━━━*
-
-reaction, truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomecheck, greatcheck, gaycheck, cutecheck, lesbiancheck, hornycheck, prettycheck, lovelycheck, uglycheck, charactercheck
-
- *━━━〈  🪁 Essentials 🪁  〉━━━*
-
-qr, say, translate, fliptext, toletter, weather
-
- *━━━〈  💥 NSFW 💥  〉━━━*
-
-🍁 Type " *${prefix}nsfw* " then enable NSFW (Admin only!) 
-
-🍁 Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
-
-
-
+╔════⧫🦋𝑭𝒖𝒏🦋
+║
+║ ${prefix}pervertcheck
+║ ${prefix}reaction
+║ ${prefix}truth
+║ ${prefix}dare
+║ ${prefix}couple
+║ ${prefix}soulmate
+║ ${prefix}handsomecheck
+║ ${prefix}beautifulcheck
+║ ${prefix}awesomecheck
+║ ${prefix}greatcheck
+║ ${prefix}chutiyacheck
+║ ${prefix}ganducheck
+║ ${prefix}maturecheck
+║ ${prefix}gaycheck
+║ ${prefix}cutecheck
+║ ${prefix}lesbiancheck
+║ ${prefix}hornycheck
+║ ${prefix}prettycheck
+║ ${prefix}lovelycheck
+║ ${prefix}uglycheck
+║ ${prefix}charactercheck
+║ ${prefix}devime
+║ ${prefix}setbotpp
+║ ${prefix}stickermeme
+║ ${prefix}staminacheck
+║ ${prefix}chutiyacheck
+║
+╚════════════╝
+ 
+╔════⧫🐬𝑬𝒔𝒔𝒆𝒏𝒕𝒊𝒂𝒍/𝑶𝒕𝒉𝒆𝒓𝒔🐬
+║
+║ ${prefix}translate
+║ ${prefix}fliptext
+║ ${prefix}toletter
+║ ${prefix}weather
+║
+╚════════════╝
+ 
+╔════⧫🐾𝑵𝑺𝑭𝑾 🐾
+║
+║ 🍊 Type " *${prefix}nsfw* " then enable NSFW (Admin only!) 
+║
+║  🍑 Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
+╚════════════╝
+/*
 
  『  *${global.BotName}*  』
- Powered by: *Fantox*
+ Powered by: *Devime*
 
  🔰 To use any of these commands type 
  " *${prefix}<Command name>* ".
@@ -4822,6 +5162,8 @@ qr, say, translate, fliptext, toletter, weather
  🔰 To get Support Group link type " *${prefix}support* ".
 
  🔰 Type " *${prefix}help* " to get full command list.`
+
+ 
     
 
  let buttonshelpm = [
@@ -4866,11 +5208,11 @@ break
 
 
 
-case 'miku':
+case 'shibam':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
 
-const txt = `Do you love Miku? Then we are the same.`
+const txt = `Do you love Shibam? Then we are the *Rival*.`
 const mikuarray= [
             "https://c.tenor.com/SOeIW-QVZvoAAAPo/scared-the-quintessential-quintuplets.mp4",
             "https://c.tenor.com/FDe7lTs0xvMAAAPo/miku-nakano-nakano-miku.mp4",

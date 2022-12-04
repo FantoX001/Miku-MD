@@ -1,6 +1,6 @@
 {
- "name": "miku-md",
- "description": "Multi Device Whatsapp Bot By Fantox",
+ "name": "Zero_Two",
+ "description": "Multi Device Whatsapp Bot By Hawkay002",
  "version": "3.0.0",
  "main": "index.js",
  "type": "commonjs",
@@ -18,7 +18,7 @@
   "bot-md",
   "multi-device"
  ],
- "author": "Fantox (FantoX001)",
+ "author": "Satoru Gojo・ショヴィス・滅 𓆩✧𓆪 (Hawkay002)",
  "license": "MIT",
  "dependencies": {
   "@adiwajshing/baileys": "^4.4.0",

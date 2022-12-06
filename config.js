@@ -16,7 +16,7 @@ global.author = "By: Dipak"
 global.OwnerName = "Deepak"
 global.BotSourceCode = "https://github.com/Deepak-69/Miku"
 global.SupportGroupLink = "https://chat.whatsapp.com/HAgTIrUxvFK9SNTom2KOQH"
-global.sessionName = "session"
+global.sessionName = "VXE3RHExakE="
 
 
 

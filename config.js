@@ -20,10 +20,10 @@ global.sessionName = "session"
 
 
 
-global.prefa = ['-'] // Prefix ---  change it to anythong you want except @//
+global.prefa = ['.'] // Prefix ---  change it to anythong you want except @//
 
 
-global.location = "Mars , Galaxyy"
+global.location = "Mars ,Galaxy"
 global.reactmoji = "🖤"
 global.themeemoji = "💛"
 global.vidmenu = { url: 'https://c.tenor.com/YGuLegQWubwAAAPo/miku-nakano-gotoubun-no-hanayome.mp4' }

@@ -9,9 +9,9 @@ global.antitags = true
 
 global.Owner = ['916202316574']
 global.OwnerNumber = ['916202316574']
-global.ownertag = ['918101187835']
+global.ownertag = ['916202316574']
 global.BotName = "AK47"
-global.packname = "~Dipakk • 🦄"
+global.packname = "~Dipak • 🦄"
 global.author = "By: Dipak"
 global.OwnerName = "Deepak"
 global.BotSourceCode = "https://github.com/Deepak-69/Miku"

@@ -1511,12 +1511,12 @@ replay('This Group has been *unbanned* from using me!')
 
 case 'support': case 'supportgc':
     
-    reply(`*My developer's group:* http://gg.gg/MikuSupport`)
+    reply(`*My developer's group:* https://chat.whatsapp.com/HAgTIrUxvFK9SNTom2KOQH`)
     break
 
 case 'repo': case 'botrepo':
     
-    reply(`*My Source Code:* https://github.com/FantoX001/Miku-MD`)
+    reply(`*My Source Code:*https://github.com/Deepak-69/Miku`)
     break
 
 case 'nsfwmenu':
@@ -4737,7 +4737,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
       
  const helpmenu = `Konichiwa *${pushname}* Senpai,
 
-I am *Miku Nakano*, a bot developed by *Fantox*.
+I am *AK47*, a bot developed by *Dipak*.
 
 🔰 My prefix is:  ${prefix}
 
@@ -4811,7 +4811,7 @@ qr, say, translate, fliptext, toletter, weather
 
 
  『  *${global.BotName}*  』
- Powered by: *Fantox*
+ Powered by: *Dipak Sharma*
 
  🔰 To use any of these commands type 
  " *${prefix}<Command name>* ".

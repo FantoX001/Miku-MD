@@ -7,25 +7,25 @@ global.autoReadAll = false
 global.antitags = true
 
 
-global.Owner = ['918101187835']
-global.OwnerNumber = ['918101187835']
-global.ownertag = ['918101187835']
-global.BotName = "Miku"
-global.packname = "Miku bot"
-global.author = "By: Fantox"
-global.OwnerName = "Fantox"
-global.BotSourceCode = "https://github.com/FantoX001/Miku-MD"
-global.SupportGroupLink = "https://chat.whatsapp.com/JcBzjRIxM5UHfuJbt0KrWt"
-global.sessionName = "session"
+global.Owner = ['916202316574']
+global.OwnerNumber = ['916202316574']
+global.ownertag = ['916202316574']
+global.BotName = "AK47"
+global.packname = "~Dipak • 🦄"
+global.author = "By: Dipak"
+global.OwnerName = "Deepak"
+global.BotSourceCode = "https://github.com/Deepak-69/Miku"
+global.SupportGroupLink = "https://chat.whatsapp.com/HAgTIrUxvFK9SNTom2KOQH"
+global.sessionName = "VXE3RHExakE="
 
 
 
-global.prefa = ['-'] // Prefix ---  change it to anythong you want except @//
+global.prefa = ['.'] // Prefix ---  change it to anythong you want except @//
 
 
-global.location = "West Bengal, India"
-global.reactmoji = "❤️"
-global.themeemoji = "💖"
+global.location = "Mars ,Galaxy"
+global.reactmoji = "🖤"
+global.themeemoji = "💛"
 global.vidmenu = { url: 'https://c.tenor.com/YGuLegQWubwAAAPo/miku-nakano-gotoubun-no-hanayome.mp4' }
 global.websitex = "https://github.com/FantoX001"
 global.lolhuman = "KaysaS"
@@ -66,7 +66,7 @@ global.mess = {
     privateonly: 'This command is only made for *Private Chat*, Baka!',
     botonly: 'Only the *Bot itself* can use this command!',
     waiting: 'Chotto Matte...',
-    nolink: 'Please provide me *link*, Baka!',
+    nolink: 'Please provide me *link*,onii chan!',
     error: 'An error occurd!',
     banned: 'You are *Banned* fron using commands!',
     bangc: 'This Group is *Banned* from using Commands!',

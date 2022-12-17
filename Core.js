@@ -2899,7 +2899,7 @@ case 'tomp3': {
  let media = await quoted.download()
  let { toAudio } = require('./lib/converter')
  let audio = await toAudio(media, 'mp4')
- Miku.sendMessage(m.chat, {document: audio, mimetype: 'audio/mpeg', fileName: `Converted By ${global.BotName} (${m.id}).mp3`}, { quoted : m })
+ Miku.sendMessage(m.chat, {audio: audio, mimetype: 'audio/mpeg', fileName: `Converted By ${global.BotName} (${m.id}).mp3`}, { quoted : m })
  }
 break
 
@@ -3442,7 +3442,7 @@ case 'music': case 'play': case 'song': case 'ytplay': {
     let fileSizeInBytes = stats.size;
     if (fileSizeInBytes > 60000000) return reply('Cant send audios longer than 60 MB!')
     
- await Miku.sendMessage(from, {document: fs.readFileSync(ytmp3play2.path),fileName:'Miku_YTmp3_Downloader.mp3',mimetype: 'audio/mpeg',}, {quoted:m})
+ await Miku.sendMessage(from, {audio: fs.readFileSync(ytmp3play2.path),fileName:'Miku_YTmp3_Downloader.mp3',mimetype: 'audio/mpeg',}, {quoted:m})
  }
  break
 

@@ -3934,7 +3934,7 @@ case 'nsfwloli' :  {
     if (!AntiNsfw) return reply(mess.nonsfw)
     
 reply(mess.waiting)
- waifudhgd = await getBuffer(`https://api-reysekha.herokuapp.com/api/wallpaper/${command}?apikey=APIKEY  `)     
+ waifudhgd = await getBuffer(`https://api.sekha.me/api/wallpaper/${command}?apikey=APIKEY  `)     
  let nsfwapireply = [
     {buttonId: `${prefix}${command}`, buttonText: {displayText: `>>`}, type: 1},
     ]
@@ -3951,9 +3951,9 @@ reply(mess.waiting)
 break
 
 
-case 'ahegao' : case 'ass' : case 'bdsm' :  case 'cuckold' :  case 'cum' : case 'ero' :
+case 'bdsm' : case 'ahegao' : case 'ass' :  case 'cuckold' :  case 'cum' : case 'ero' :
     case 'femdom' : case 'gangbang' : case 'foot' : case 'glasses':  case 'hentai': 
-     case 'masturbation': case 'neko': case 'orgy': case 'panties': 
+     case 'masturbation': case 'neko': case 'orgy': case 'panties':  
     case 'pussy': case 'tentacles': case 'things': case 'yuri': 
 {
     if (isBan) return reply(mess.banned)	 			
@@ -3962,7 +3962,7 @@ case 'ahegao' : case 'ass' : case 'bdsm' :  case 'cuckold' :  case 'cum' : case 
     if (!AntiNsfw) return reply(mess.nonsfw)
     
     reply(mess.waiting)
-     waifudhgd = await getBuffer(`https://api-reysekha.herokuapp.com/api/nsfw/${command}?apikey=APIKEY`)     
+     waifudhgd = await getBuffer(`https://api.sekha.me/api/nsfw/${command}?apikey=apirey`)  
      let nsfwapireply = [
         {buttonId: `${prefix}${command}`, buttonText: {displayText: `>>`}, type: 1},
         ]
